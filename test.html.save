@@ -1,0 +1,1 @@
+udo mount -o rw,remount,umask=000 /cdrom
