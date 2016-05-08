@@ -58,7 +58,19 @@
       display: block;
   }
 }
-
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
   </style>
 </head>
 <body>
@@ -88,12 +100,11 @@
       <div class="col-lg-12 col-md-12 col-xs-12">
       	<div class="jumbotron" style="height: auto; border-radius: 0px; background-color: #BDBDBD;">
           <div style="float:right; margin-top: 4%;" class="ad"><img src="thelogo.jpg"></div>
-          <h1 style="text-indent: 5%;"><i>Ticket Prices:</i></h1>
+          <h1><i>Ticket Prices:</i></h1>
           <h2></h2>
-          <h2>Here is a list of the ticket prices:</h2>
+          <h2>Orlando Tour</h2>
           <br>
           <table class = "table">
-   
    <thead>
       <tr>
          <th>Age</th>
@@ -121,6 +132,9 @@
    </tbody>
    
 </table>
+<div class="google-maps">
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJd7zN_thz54gRnr-lPAaywwo&key=AIzaSyAT-HRkzF7xkui0P6Y3IWv0A4qUet5ii3s"></iframe>
+</div>
       	</div>
         
       </div>
