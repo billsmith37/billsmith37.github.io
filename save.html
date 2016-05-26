@@ -9,7 +9,7 @@ onclick="loadDoc('textfile.txt', myFunction)">Change Content
 </button>
 
 <script>
-function loadDoc(url, cfunc) {
+document.onload = function loadDoc(url, cfunc) {
   var xhttp;
   xhttp=new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
