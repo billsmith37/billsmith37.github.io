@@ -90,7 +90,6 @@ function myFunction(xhttp) {
   document.getElementById("loadpage").innerHTML = xhttp.responseText;
 }
 </script>
-loadDoc('index.txt', myFunction)
 <body onload="var hash = location.hash;
         if (hash == '#tickets') {
             loadDoc('tickets.txt', myFunction)
