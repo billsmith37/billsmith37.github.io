@@ -90,7 +90,22 @@ function myFunction(xhttp) {
   document.getElementById("loadpage").innerHTML = xhttp.responseText;
 }
 </script>
+
 <body onload="loadDoc('index.txt', myFunction)">
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        //Get hash from URL. Ex. index.html#Chapter1
+        var hash = location.hash;
+
+        if (hash == '#tickets') {
+            loadDoc('tickets.txt', myFunction)
+        }
+        if (hash == '#merch') {
+            loadDoc('merch.txt', myFunction)
+        }
+    });
+</script>
 <script type="text/javascript">
 </script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
