@@ -90,13 +90,8 @@ function myFunction(xhttp) {
   document.getElementById("loadpage").innerHTML = xhttp.responseText;
 }
 </script>
-
-<body onload="loadDoc('index.txt', myFunction)">
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        //Get hash from URL. Ex. index.html#Chapter1
-        var hash = location.hash;
+loadDoc('index.txt', myFunction)
+<body onload="var hash = location.hash;
 
         if (hash == '#tickets') {
             loadDoc('tickets.txt', myFunction)
@@ -104,7 +99,11 @@ function myFunction(xhttp) {
         if (hash == '#merch') {
             loadDoc('merch.txt', myFunction)
         }
-    });
+        else {
+        loadDoc('index.txt', myFunction)
+    }">
+<script type="text/javascript">
+
 </script>
 <script type="text/javascript">
 </script>
