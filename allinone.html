@@ -71,7 +71,7 @@
 </head>
 <body>
 <div id="loadpage"></div>
-
+<p font-size="15">Please Enable Javascript for this page to work.</p>
 
 <script>
 function loadDoc(url, cfunc) {
@@ -97,9 +97,13 @@ function myFunction(xhttp) {
         if (hash == '#merch') {
             loadDoc('merch.txt', myFunction)
         }
-        else {
-        loadDoc('index.txt', myFunction)
-    }">
+        if (hash == '#') {
+            loadDoc('index.txt', myFunction)
+        }
+        if (hash == '') {
+            loadDoc('index.txt', myFunction)
+        }
+        ">
 <script type="text/javascript">
 
 </script>
