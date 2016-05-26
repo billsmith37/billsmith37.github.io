@@ -26,7 +26,7 @@
           <div style="float:right; margin-top: 4%;" class="ad"><img src="thelogo.jpg"></div>
           <h1><i>Ticket Prices:</i></h1>
           <h2></h2>
-          <h2>Orlando Tour</h2>
+          <h2>Orwando Tour</h2>
           <br>
           <table class = "table">
    <thead>
