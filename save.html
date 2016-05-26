@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea id="demo">Let AJAX change this text.</textarea>
+
+<button type="button"
+onclick="loadDoc('textfile.txt', myFunction)">Change Content
+</button>
+
+<script>
+function loadDoc(url, cfunc) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      cfunc(xhttp);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+}
+</script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+</body>
+</html>
