@@ -5,7 +5,7 @@
 <textarea id="demo">Let AJAX change this text.</textarea>
 
 <button type="button"
-onclick="loadDoc('http://billsmith37.us.to/textfile.txt', myFunction)">Change Content
+onclick="loadDoc('textfile.txt', myFunction)">Change Content
 </button>
 
 <script>
@@ -25,7 +25,7 @@ function myFunction(xhttp) {
   document.getElementById("demo").innerHTML = xhttp.responseText;
 }
 </script>
-<body onload="loadDoc('http://billsmith37.us.to/textfile.txt', myFunction)">
+<body onload="loadDoc('textfile.txt', myFunction)">
 <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 </body>
 </html>
