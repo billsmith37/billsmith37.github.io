@@ -13,8 +13,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a onclick="loadDoc('tickets.txt', myFunction)" href="#">Tickets</a></li>
-        <li><a onclick="loadDoc('merch.txt', myFunction)" href="#">Merchandise</a></li>
+        <li><a onclick="loadDoc('tickets.txt', myFunction)" href="#tickets">Tickets</a></li>
+        <li><a onclick="loadDoc('merch.txt', myFunction)" href="#merch">Merchandise</a></li>
       </ul>
     </div>
 </div>
